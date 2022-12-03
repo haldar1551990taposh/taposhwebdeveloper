@@ -1,0 +1,58 @@
+/* universal selector? */
+*{
+    margin: 0;
+    padding: 0;
+    /* border? */
+    outline: 0;
+}
+/* Name/elemlent selector? */
+body{
+    background-color: coral;
+}
+img{
+    width: 100px;
+}
+#ad{
+    width: 75%;
+    background-color: darkcyan;
+    text-align: center;
+    margin: 100px auto;
+}
+/* grouping selector? */
+input, 
+label{
+    display: block;
+}
+input{
+    width: 80px;
+    margin: auto;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+label{
+    font-size: 20px;
+    line-height: 20px;
+}
+/* psudo element selector */
+input:: ::placeholder{
+    color: black;
+}
+/* decendent selector */
+#ad h1{
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+/* attribute selector */
+input[type-"submit"] {
+    margin: 10px auto;
+    width: 50%
+}
+/* psodu class selector */
+input[type-"submit"]: :hover{
+    background-color: black;
+    color: brown;
+    cursor: pointer;
+}
